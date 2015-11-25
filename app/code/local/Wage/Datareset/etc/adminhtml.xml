@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<config>
+    <menu>
+        <system>
+            <children>
+                <datareset translate="title" module="datareset">
+                    <title>Reset Database</title>
+                    <action>adminhtml/datareset_datareset/index</action>
+                </datareset>
+            </children>
+        </system>
+    </menu>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <datareset translate="title" module="datareset">
+                                <title>Reset Database</title>
+                            </datareset>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>
