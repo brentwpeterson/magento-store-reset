@@ -20,18 +20,9 @@
         <models>
             <datareset>
                 <class>Wage_Datareset_Model</class>
-                <!--resourceModel>datareset_mysql4</resourceModel-->
             </datareset>
-            <!--datareset_mysql4>
-                <class>Wage_Datareset_Model_Mysql4</class>
-                <entities>
-                    <datareset>
-                        <table>datareset</table>
-                    </datareset>
-                </entities>
-            </datareset_mysql4-->
         </models>
-        <!--resources>
+        <resources>
             <datareset_setup>
                 <setup>
                     <module>Wage_Datareset</module>
@@ -50,7 +41,7 @@
                     <use>core_read</use>
                 </connection>
             </datareset_read>
-        </resources-->
+        </resources>
         <blocks>
             <datareset>
                 <class>Wage_Datareset_Block</class>

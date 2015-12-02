@@ -96,7 +96,7 @@ class Wage_Datareset_Adminhtml_Datareset_DataresetController extends Mage_Adminh
 
             $type = $backup->getType();
 
-            $backupManager = Mage_Backup::getBackupInstance($type)
+            $backupManager = Mage::getModel('datareset/rollback') //Mage_Backup::getBackupInstance($type)
                 ->setBackupExtension($helper->getExtensionByType($type))
                 ->setTime($backup->getTime())
                 ->setBackupsDir($helper->getBackupsDir())
