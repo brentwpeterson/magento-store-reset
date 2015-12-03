@@ -1,0 +1,3 @@
+app/code/local/Wage/Datareset/	app/code/local/Wage/Datareset/
+app/etc/modules/Wage_Datareset.xml	app/etc/modules/Wage_Datareset.xml
+app/design/adminhtml/default/default/template/datareset/	app/design/adminhtml/default/default/template/datareset/
