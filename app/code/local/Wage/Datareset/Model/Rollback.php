@@ -18,24 +18,24 @@ class Wage_Datareset_Model_Rollback extends Mage_Backup_Db
 
 
             $updateStatement = '';
-            if(strpos($statement, '`admin_assert`')){ continue; }
-            if(strpos($statement, '`admin_role`')){ continue; }
-            if(strpos($statement, '`admin_rule`')){ continue; }
-            if(strpos($statement, '`admin_user`')){ continue; }
-            if(strpos($statement, '`adminnotification_inbox`')){ continue; }
-            if(strpos($statement, '`api2_acl_attribute`')){ continue; }
-            if(strpos($statement, '`api2_acl_role`')){ continue; }
-            if(strpos($statement, '`api2_acl_rule`')){ continue; }
-            if(strpos($statement, '`api2_acl_user`')){ continue; }
-            if(strpos($statement, '`api_assert`')){ continue; }
-            if(strpos($statement, '`api_role`')){ continue; }
-            if(strpos($statement, '`api_rule`')){ continue; }
-            if(strpos($statement, '`api_session`')){ continue; }
-            if(strpos($statement, '`api_user`')){ continue; }
+            //if(strpos($statement, '`admin_assert`')){ continue; }
+            //if(strpos($statement, '`admin_role`')){ continue; }
+            //if(strpos($statement, '`admin_rule`')){ continue; }
+            //if(strpos($statement, '`admin_user`')){ continue; }
+            //if(strpos($statement, '`adminnotification_inbox`')){ continue; }
+            //if(strpos($statement, '`api2_acl_attribute`')){ continue; }
+            //if(strpos($statement, '`api2_acl_role`')){ continue; }
+            //if(strpos($statement, '`api2_acl_rule`')){ continue; }
+            //if(strpos($statement, '`api2_acl_user`')){ continue; }
+            //if(strpos($statement, '`api_assert`')){ continue; }
+            //if(strpos($statement, '`api_role`')){ continue; }
+            //if(strpos($statement, '`api_rule`')){ continue; }
+            //if(strpos($statement, '`api_session`')){ continue; }
+            //if(strpos($statement, '`api_user`')){ continue; }
             if(strpos($statement, '`core_cache_option`')){ continue; }
-            if(strpos($statement, '`oauth_consumer`')){ continue; }
-            if(strpos($statement, '`oauth_nonce`')){ continue; }
-            if(strpos($statement, '`oauth_token`')){ continue; }
+            //if(strpos($statement, '`oauth_consumer`')){ continue; }
+            //if(strpos($statement, '`oauth_nonce`')){ continue; }
+            //if(strpos($statement, '`oauth_token`')){ continue; }
             if(strpos($statement, '`core_resource`')){ continue; }
             
             $this->getResourceModel()->runCommand($statement);
